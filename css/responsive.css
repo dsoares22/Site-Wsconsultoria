@@ -1,6 +1,12 @@
 /* Tablet */
 
 @media (max-width: 860px) {
+  .section-heading {
+    align-items: start;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
   .grid-2 {
     grid-template-columns: 1fr;
     gap: 3rem;
@@ -14,8 +20,8 @@
     grid-template-columns: 1fr;
   }
 
-  .contact__info,
-  .contact__form {
+  .contact__channels,
+  .contact__location {
     padding: 2.5rem;
   }
 
@@ -28,6 +34,15 @@
 /* Celular */
 
 @media (max-width: 640px) {
+  :root {
+    --section-spacing: 3.5rem;
+  }
+
+  .hero__stats > div {
+    min-height: 88px;
+    padding: 0.85rem;
+  }
+
   .menu-toggle {
     display: block;
   }
@@ -39,7 +54,7 @@
     left: 0;
     right: 0;
     flex-direction: column;
-    background: #4a2812;
+    background: #6b3a1f;
     padding: 1.5rem;
     border-bottom: 1px solid rgba(201, 160, 61, 0.3);
     gap: 1rem;
@@ -54,11 +69,21 @@
   }
 
   .hero {
-    padding: 4rem 0 5rem;
+    min-height: auto;
+    padding: var(--section-spacing) 0;
+    background-position: 62% center;
+  }
+
+  .hero__subtitle {
+    font-size: 1rem;
+  }
+
+  .hero__actions .btn {
+    justify-content: center;
   }
 
   .section {
-    padding: 4rem 0;
+    padding: var(--section-spacing) 0;
   }
 
   .hero__stats {
@@ -77,13 +102,18 @@
     width: 80px;
   }
 
-  .contact__buttons {
-    flex-direction: column;
+  .contact__channels,
+  .contact__location {
+    padding: 1.5rem;
   }
 
-  .contact__buttons .btn--whatsapp,
-  .contact__buttons .btn--instagram {
+  .contact__primary-link {
     justify-content: center;
+    width: 100%;
+  }
+
+  .contact__location iframe {
+    min-height: 260px;
   }
 
   .footer__inner {

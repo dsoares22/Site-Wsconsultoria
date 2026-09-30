@@ -41,12 +41,14 @@ footer::before {
 .footer__left {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1rem;
 }
 
 .footer__copy {
   color: #d4c5b5;
   font-size: 0.9rem;
+  text-align: center;
 }
 
 .footer__line {
@@ -84,8 +86,12 @@ footer::before {
 .footer__socials {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.8rem;
-  margin-top: 0.6rem;
+}
+
+.footer__socials a {
+  margin-left: 0;
 }
 
 .social {
