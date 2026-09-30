@@ -1,71 +1,82 @@
-<section id="contato" class="section">
+<section id="contato" class="section contact-section">
   <div class="container">
+    <div class="contact-heading">
+      <div class="eyebrow">Estamos por perto</div>
+      <h2>Vamos conversar?</h2>
+      <p>
+        Conte o que você procura. Nossa equipe pode ajudar na escolha do imóvel,
+        na negociação e na documentação.
+      </p>
+    </div>
+
     <div class="contact">
-      <div class="contact__info">
-        <h2>Vamos conversar?</h2>
-        <p>
-          Preencha o formulário ou entre em contato pelos canais em baixo.
-          Responderemos rapidamente.
-        </p>
-        <ul class="contact__list">
-          <li><i class="bi bi-telephone"></i> (86) 99997-2659</li>
-          <li><i class="bi bi-envelope"></i> wsassesoriacomercial@gmail.com</li>
-          <li>
-            <i class="bi bi-geo-alt"></i> Av. Piauí, 700 – Cocais Shopping, Loja
-            59
-          </li>
-        </ul>
-        <div class="contact__buttons">
+      <div class="contact__channels">
+        <span class="contact__label">Atendimento direto</span>
+        <h3>Comece uma conversa pelo WhatsApp</h3>
+        <p>Fale com a WS Assessoria Comercial de forma simples e rápida.</p>
+        <a
+          href="https://wa.me/5586999972659"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="contact__primary-link"
+        >
+          <i class="bi bi-whatsapp" aria-hidden="true"></i>
+          Conversar no WhatsApp
+          <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+        </a>
+
+        <div class="contact__other">
+          <span class="contact__label">Outras formas de contato</span>
+          <a href="tel:+5586999972659" class="contact__link">
+            <i class="bi bi-telephone" aria-hidden="true"></i>
+            <span><small>Telefone</small>(86) 99997-2659</span>
+            <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+          </a>
           <a
-            href="https://wa.me/5586999972659"
-            target="_blank"
-            rel="noopener"
-            class="btn btn--whatsapp"
-            ><i class="bi bi-whatsapp"></i> WhatsApp</a
+            href="mailto:wsassessoriacomercial@gmail.com"
+            class="contact__link"
           >
+            <i class="bi bi-envelope" aria-hidden="true"></i>
+            <span><small>E-mail</small>wsassessoriacomercial@gmail.com</span>
+            <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+          </a>
           <a
             href="https://www.instagram.com/wsassessoriacomercial"
             target="_blank"
-            rel="noopener"
-            class="btn btn--instagram"
-            ><i class="bi bi-instagram"></i> Instagram</a
+            rel="noopener noreferrer"
+            class="contact__link"
           >
+            <i class="bi bi-instagram" aria-hidden="true"></i>
+            <span><small>Instagram</small>@wsassessoriacomercial</span>
+            <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact__location">
+        <div class="contact__location-heading">
+          <div>
+            <span class="contact__label">Onde estamos</span>
+            <h3>Venha nos visitar</h3>
+            <p>Av. Piauí, 700 · Cocais Shopping, Loja 59</p>
+          </div>
+          <i class="bi bi-geo-alt" aria-hidden="true"></i>
         </div>
         <iframe
+          title="Mapa da localização da WS Assessoria Comercial"
           src="https://www.google.com/maps?q=Av.%20Piauí,%20700%20Timon%20MA&output=embed"
           loading="lazy"
         ></iframe>
+        <a
+          href="https://www.google.com/maps/search/?api=1&query=Av.%20Piau%C3%AD%2C%20700%2C%20Timon%2C%20MA"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="contact__map-link"
+        >
+          Ver no Google Maps
+          <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+        </a>
       </div>
-      <form
-        class="contact__form"
-        action="https://formsubmit.co/wsassessoriacomercial@gmail.com"
-        method="POST"
-      >
-        <input type="hidden" name="_subject" value="Novo contato do site!" />
-        <input type="hidden" name="_captcha" value="false" />
-        <label
-          >Nome <input type="text" name="nome" placeholder="Seu nome" required
-        /></label>
-        <label
-          >E-mail
-          <input
-            type="email"
-            name="email"
-            placeholder="voce@email.com"
-            required
-        /></label>
-        <label
-          >Mensagem
-          <textarea
-            name="mensagem"
-            placeholder="Como podemos ajudar?"
-            required
-          ></textarea>
-        </label>
-        <button type="submit" class="btn btn--primary btn--block">
-          Enviar mensagem
-        </button>
-      </form>
     </div>
   </div>
 </section>

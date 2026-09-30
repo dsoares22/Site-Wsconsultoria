@@ -11,6 +11,8 @@
   --gradient: linear-gradient(135deg, #6b3a1f 0%, #4a2812 60%, #c9a03d 100%);
   --shadow-lg: 0 20px 60px -20px rgba(0, 0, 0, 0.5);
   --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.25);
+  --content-width: 1200px;
+  --section-spacing: 5rem;
 }
 
 * {
@@ -21,6 +23,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
 }
 
 body {
@@ -39,6 +42,12 @@ img {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent-light);
+  outline-offset: 4px;
 }
 
 ul {
@@ -60,7 +69,7 @@ h2 {
 }
 
 .container {
-  max-width: 1180px;
+  max-width: var(--content-width);
   margin: 0 auto;
   padding: 0 1.5rem;
 }
@@ -105,6 +114,14 @@ h2 {
   backdrop-filter: blur(6px);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
   overflow: hidden;
+}
+
+.badge__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent-light);
+  box-shadow: 0 0 0 4px rgba(218, 180, 95, 0.18);
 }
 
 .btn {

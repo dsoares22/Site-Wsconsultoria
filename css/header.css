@@ -4,7 +4,7 @@
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(75, 40, 18, 0.95);
+  background: rgba(107, 58, 31, 0.97);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
 }
@@ -17,13 +17,15 @@
 }
 
 .logo {
-  font-family: "Space Grotesk", sans-serif;
-  font-weight: 700;
-  font-size: 1.3rem;
-  background: linear-gradient(135deg, #c9a03d, #dab45f);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.logo img {
+  display: block;
+  width: 150px;
+  height: auto;
 }
 
 .nav {
@@ -42,6 +44,10 @@
 .nav a:hover {
   color: #c9a03d;
   opacity: 1;
+}
+
+.nav a:not(.btn) {
+  padding: 0.5rem 0;
 }
 
 .menu-toggle {
