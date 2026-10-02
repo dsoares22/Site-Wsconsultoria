@@ -51,7 +51,7 @@ O projeto está hospedado na **Netlify**, com publicação contínua e acesso pe
 
 Desenvolvido por **Davi Silva Soares**.
 
-- [GitHub](https://github.com/dvsxx11)
+- [GitHub](https://github.com/dsoares22)
 - [LinkedIn](https://www.linkedin.com/in/davi-silva-soares-469b9235b/)
 
 ---
